@@ -274,4 +274,91 @@ body {
 
   }
 
+  .project-card span{
+    color: var(--primary);
+    font-size: 9rem;
+
+  }
+
+  .project-card h3 {
+    margin: 15px 0;
+  }
+
+
+  .project-card p {
+    color: var(--muted);
+  }
+
+  .timeline{
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .timeline-item {
+    background: var(--card);
+    padding: 25px;
+    border-left: 4px solid var(--primary);
+    margin-bottom: 25px;
+    border-radius: 10px;
+  } 
+
+  .timeline-item span{
+    color: var(--primary);
+  }
+
+  .contato{
+    text-align: center;
+  }
+
+  .social-links{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .social-links a{
+    color: var(--text);
+    text-decoration: none;
+
+  }
+  
+  
+  footer{
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+
+  }
+
+  @media(max-width: 900px) {
+    .hero-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+    }
+
+    .hero.buttons{
+      justify-content: center;
+
+    }
+
+    .nav{
+      display: none;
+    }
+
+
+  }
+
+
+
+
+
+
+
 }
