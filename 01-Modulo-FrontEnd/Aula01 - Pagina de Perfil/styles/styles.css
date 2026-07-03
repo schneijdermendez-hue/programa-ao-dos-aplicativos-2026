@@ -1,0 +1,277 @@
+:root {
+  --bg: #08130f;
+  --card: #10211b;
+  --primary: #10b981;
+  --text: #ffffff;
+  --muted: #b8d8cd;
+  --border: #295040;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #750202);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+
+  background: var(--card);
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .35);
+
+  margin-bottom: 35px;
+}
+
+.foto {
+  width: 220px;
+  height: 220px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 5px solid var(--primary);
+
+  box-shadow: 0 0 20px rgba(77, 246, 224, 0.4);
+
+  transition: .4s;
+}
+
+.foto:hover {
+  transform: scale(1.05);
+}
+
+.dados h1 {
+  color: var(--primary);
+  margin-bottom: 15px;
+  font-size: 2.2rem;
+}
+
+.dados p {
+  margin: 8px 0;
+  color: var(--muted);
+}
+
+/* ================= SEÇÕES ================= */
+
+.secao {
+  margin-bottom: 30px;
+}
+
+.secao h2 {
+  margin-bottom: 15px;
+  color: var(--primary);
+}
+
+/* ================= CARDS ================= */
+
+.card {
+
+  background: var(--card);
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  border: 1px solid var(--border);
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .25);
+
+  transition: .3s;
+}
+
+.card:hover {
+
+  transform: translateY(-5px);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, .35);
+}
+
+.card p {
+
+  margin-bottom: 10px;
+}
+
+.card ul {
+
+  padding-left: 20px;
+}
+
+.card li {
+
+  margin: 10px 0;
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media(max-width:768px) {
+
+  .header {
+
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .foto {
+
+    width: 180px;
+    height: 180px;
+  }
+
+  .dados h1 {
+
+    font-size: 1.8rem;
+  }
+
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+
+    gap: 80px;
+    align-items: center;
+  }
+
+  .hero-foto {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-foto {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--primary);
+    box-shadow: 0 0 40px rgb(56, 189, 248, 3);
+  }
+
+  .badge {
+    display: inline-block;
+    background: rgba(56, 189, 248, 0.1);
+    color: var(--primary);
+    padding: 8px 18px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 25px;
+  }
+
+  .hero p {
+    color: var(--muted);
+    max-width: 700px;
+    margin-bottom: 30px;
+  }
+
+  .hero.buttons {
+    display: flex;
+    gap: 15px;
+  }
+
+  .btn-primary {
+    background-color: #047e6d;
+    color: black;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+
+  .btn-secundary {
+    border: 1px solid var(--border);
+    color: #f8fafc;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+  }
+
+  scetion {
+    padding: 120px 0;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50 px;
+    text-align: center;
+
+  }
+
+  #sobre p {
+    /*Seleciona a tag <p> que...*/
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-feat, min-max(250px, 1fr));
+  }
+
+  .tech-card {
+    background: var(--card);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    transition: .3s;
+  }
+
+  .tech-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary);
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-feat, min-max(320px, 1fr));
+    gap: 25px;
+  }
+
+  .project-card {
+    background: var(--card);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    transition: .3s;
+  }
+
+  .project-car:hover {
+    transform: translateY(-8 px);
+
+  }
+
+}
